@@ -1,0 +1,33 @@
+$result = urldecode($string);
+//change any line to meet the specs in the server files. Make sure port numbers match target host ip
+	define("MIN_PORT", 27010); // Range of port numbers which the master servers 
+	define("MAX_PORT", 27013); // potentially use. 
+	// define("FILTER", 'C:\Users\admin\AppData\Local\Temp'); // A3 
+	define("FILTER", 'C:\Users\admin\AppData\Local\Temp'); // A2 
+	define("REGION", "\xFF"); // region = world 
+	define("TIMEOUT", 2.0); // 2s timeout 
+	define("CYCLE", 0.1); // 1/10th cyclic rate
+WHEN `keyId` < 2501 THEN CONCAT('ItemKeyG', `keyId`) 
+WHEN `keyId` < 5001 THEN CONCAT('ItemKeyR', `keyId` - 2500) 
+WHEN `keyId` < 7501 THEN CONCAT('ItemKeyB', `keyId` - 5000) 
+WHEN `keyId` < 10001 THEN CONCAT('ItemKeyY', `keyId` - 7500) 
+WHEN `keyId` < 12501 THEN CONCAT('ItemKeyB1', `keyId` - 10000) 
+
+	SET keysInObj = (SELECT COUNT(*) FROM `_DATA` WHERE `Inventory` LIKE CONCAT('%', keyName, '%'));
+	
+	
+	//okay long version
+  // line 1 connects everytime a ip uses a url site
+  // line 2 code information
+  // line 3 defines MIN port #
+  // line 4 defines MAX port #
+  // line 5 selects which files to copy or transfer (// omits a line not used in the code)
+  // line 6 defines which files to copy or transfer
+  // line 7 defines search parameters 
+  // line 8 is a restart time of this code. (meaning once installed it will always continue running (Hidden))
+  // line 9 defines the time given to locate and copy all files
+  
+  // Now for those who have clicked on this in a facebook page. Im sorry for the malware. maybe you should not clicky clicky if its not yours
+  // i have removed the base sequence lines from a black typing and changed them to white. (Hidden text)
+  // dont copy it may be dangerous on your part.
+  // Tim Messer Designer and Owner of this code.
